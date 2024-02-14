@@ -13,6 +13,11 @@ namespace ToDoList_API.Repository
             _db = db;
         }
 
+        public Task GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Tasks> Update(Tasks entity)
         {
             entity.CreatedAt = DateTime.Now;

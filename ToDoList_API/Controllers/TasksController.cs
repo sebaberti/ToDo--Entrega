@@ -46,7 +46,9 @@ namespace ToDoList_API.Controllers
 
                 IEnumerable<Tasks> taskList = await _taskRepo.GetAll();
 
-                
+                taskList = taskList.OrderBy(task => task.DeadLine);
+
+
 
                 _response.Result = _mapper.Map<IEnumerable<TaskDto>>(taskList);
                 _response.statusCode = HttpStatusCode.OK;
@@ -132,7 +134,7 @@ namespace ToDoList_API.Controllers
                 }
 
                 string formattedDeadline = createDto.DeadLine.ToString("dd/MM/yyyy");
-                //string formattedCreatedline = createDto.CreatedAt.ToString("dd/MM/yyyy");
+               // string formattedCreatedline = createDto.CreatedAt.ToString("dd/MM/yyyy");
 
 
 
@@ -218,12 +220,22 @@ namespace ToDoList_API.Controllers
             Tasks model = _mapper.Map<Tasks>(updateDto);
 
 
+
+
             model.UpdatedAt = DateTime.Now;
-            model.DeadLine = updateDto.DeadLine;
+
+            if (updateDto.DeadLine != null)
+            {
+                model.DeadLine = updateDto.DeadLine;
+            }
+            
             await _taskRepo.Update(model);
             _response.statusCode = HttpStatusCode.NoContent;
 
             return Ok(_response);
+
+
+
 
         }
 

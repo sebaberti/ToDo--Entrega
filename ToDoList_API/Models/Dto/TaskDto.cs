@@ -11,8 +11,8 @@ namespace ToDoList_API.Models.Dto
 
         public DateTime? DeadLine { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
     }
 }

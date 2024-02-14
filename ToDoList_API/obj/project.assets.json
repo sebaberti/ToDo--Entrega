@@ -4137,11 +4137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSI\\OneDrive\\Escritorio\\To do List\\ToDoList\\ToDoList_API\\ToDoList_API.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\OneDrive\\Escritorio\\TO-DO\\ToDoList\\ToDoList_API\\ToDoList_API.csproj",
       "projectName": "ToDoList_API",
-      "projectPath": "C:\\Users\\MSI\\OneDrive\\Escritorio\\To do List\\ToDoList\\ToDoList_API\\ToDoList_API.csproj",
+      "projectPath": "C:\\Users\\MSI\\OneDrive\\Escritorio\\TO-DO\\ToDoList\\ToDoList_API\\ToDoList_API.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSI\\OneDrive\\Escritorio\\To do List\\ToDoList\\ToDoList_API\\obj\\",
+      "outputPath": "C:\\Users\\MSI\\OneDrive\\Escritorio\\TO-DO\\ToDoList\\ToDoList_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
